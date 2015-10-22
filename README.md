@@ -1,7 +1,3 @@
-# my_app
-
-A minimal Flutter project.
-
 # Quick example using [Flutter](https://flutter.io) & [Syncbase](https://github.com/vanadium/mojo.syncbase)
 
 ## Prerequisite
