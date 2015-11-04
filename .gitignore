@@ -1,5 +1,6 @@
 packages
 .packages
+.pub
 pubspec.lock
 app.flx
 snapshot_blob.bin
