@@ -4,7 +4,7 @@ import 'dart:convert' show UTF8;
 
 import 'package:flutter/material.dart';
 
-import 'package:flutter/services.dart' show embedder;
+import 'package:flutter/services.dart' show shell;
 import 'package:syncbase/syncbase_client.dart' as sb;
 
 void main() {
@@ -48,7 +48,7 @@ initSyncbase(FlutterSyncbaseDemoState state) async {
   }
 
   initialized = true;
-  sb.SyncbaseClient c = new sb.SyncbaseClient(embedder.connectToService,
+  sb.SyncbaseClient c = new sb.SyncbaseClient(shell.connectToService,
       'https://mydartapp.mojoapps.io/packages/syncbase/mojo_services/android/syncbase_server.mojo');
 
   sb.SyncbaseApp sbApp = await createApp(c, 'testapp');
