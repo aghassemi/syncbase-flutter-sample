@@ -13,7 +13,6 @@ pub run flutter_tools run_mojo \
   --mojo-path $MOJO_DIR/src \
   --android \
   --mojo-debug \
-  -- \
   --enable-multiprocess \
   --map-origin="https://mydartapp.mojoapps.io/=$PWD" \
   --args-for="https://mydartapp.mojoapps.io/packages/syncbase/mojo_services/android/syncbase_server.mojo --root-dir=/data/data/org.chromium.mojo.shell/app_home/syncbasedata" \
